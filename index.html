@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Sujan Magar</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="#mainPage" class="brand-box">
+      <img src="logo.png" alt="Sujan Magar logo" class="brand-logo" />
+      <div class="brand-text">
+        <h2 data-key="name">Sujan Magar</h2>
+        <div id="datetime">Loading...</div>
+      </div>
+    </a>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul id="navMenu">
+      <li><a href="#mainPage" data-key="navHome">Home</a></li>
+      <li><a href="#about" data-key="navAbout">About</a></li>
+      <li><a href="#edu" data-key="navEdu">Education</a></li>
+      <li><a href="#media" data-key="navMedia">Media</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button onclick="toggleLanguage()" id="langBtn">नेपाली</button>
+      <button onclick="toggleMode()" class="mode-btn">🌓</button>
+    </div>
+  </nav>
+
+  <div id="mainPage">
+    <header>
+      <div class="typing-container">
+        <h1 data-key="welcome" id="typingTarget">Welcome to My Website</h1>
+      </div>
+      <p data-key="subtitle">Sujan Magar | Student</p>
+    </header>
+
+    <div class="container">
+      <div class="grid-layout">
+        <div class="card" id="about">
+          <h2 data-key="aboutTitle">👨 About Me</h2>
+          <p data-key="aboutText">
+            Hello! My name is Sujan Magar. I live in Kathmandu and study Grade 12 Business.
+          </p>
+        </div>
+
+        <div class="card" id="edu">
+          <h2 data-key="eduTitle">🎓 Education</h2>
+          <ul>
+            <li data-key="edu1">SEE - Neel Barahi School</li>
+            <li data-key="edu2">Grade 12 - Triton International College</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card document-card">
+        <h2 data-key="pdfHeading">📘 Documents</h2>
+        <div class="doc-row">
+          <p class="doc-name" data-key="pdfFile">Nepali Barna PDF</p>
+          <button class="btn" onclick="openPDF()" data-key="pdfBtn">Open PDF</button>
+        </div>
+      </div>
+
+      <div class="card" id="media">
+        <h2 data-key="mediaTitle">📱 Media Gallery</h2>
+
+        <div class="media-grid">
+          <div class="media-item">
+            <h3 data-key="photoTitle">📷 Photo</h3>
+            <div class="media-wrapper">
+              <img src="ss.png" alt="Sujan showcase photo" />
+            </div>
+          </div>
+
+          <div class="media-item">
+            <h3 data-key="videoTitle">🎥 Video Reel</h3>
+            <div class="media-wrapper">
+              <video controls muted playsinline>
+                <source src="video.mp4" type="video/mp4" />
+                Your browser does not support video.
+              </video>
+            </div>
+          </div>
+
+          <div class="music-card">
+            <h3 data-key="musicTitle">🎵 Music Player</h3>
+            <audio controls>
+              <source src="song.mp3" type="audio/mpeg" />
+              Your browser does not support audio.
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pdfView">
+    <div class="pdf-header">
+      <button class="backBtn" onclick="goBack()">
+        ⬅ <span data-key="backBtnText">Back</span>
+      </button>
+    </div>
+    <iframe src="वर्ण.pdf" title="Nepali Barna PDF"></iframe>
+  </div>
+
+  <footer data-key="footer">
+    © 2026 Sujan Magar | All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
