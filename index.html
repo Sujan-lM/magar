@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Sujan Magar</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="logo.png" />
-  <link rel="apple-touch-icon" href="logo.png" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Sujan Magar | Official Portfolio | DevMagar Nepal</title>
+
+  <meta name="description" content="Official portfolio of Sujan Magar (Limel) from Kathmandu, Nepal. Explore my education, projects, media, documents, and my learning journey in web development and technology.">
+  <meta name="keywords" content="Sujan Magar, Sujan Limel, DevMagar, devmagar.com.np, Sujan, Nepal, Portfolio, Student, HTML, CSS, JavaScript, Kathmandu">
+  <meta name="author" content="Sujan Magar">
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <meta name="theme-color" content="#0f172a">
+
+  <link rel="canonical" href="https://devmagar.com.np/">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="manifest" href="manifest.json">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sujan Magar | Official Portfolio">
+  <meta property="og:description" content="Official portfolio website of Sujan Magar.">
+  <meta property="og:url" content="https://devmagar.com.np/">
+  <meta property="og:image" content="https://devmagar.com.np/logo.png">
+  <meta property="og:site_name" content="DevMagar">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sujan Magar | Official Portfolio">
+  <meta name="twitter:description" content="Official website of Sujan Magar">
+  <meta name="twitter:image" content="https://devmagar.com.np/logo.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sujan Magar",
+    "url": "https://devmagar.com.np",
+    "image": "https://devmagar.com.np/logo.png",
+    "email": "contact@devmagar.com.np",
+    "jobTitle": "Student",
+    "description": "Student from Nepal learning web development and modern technologies.",
+    "knowsAbout": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Learning New Technologies"
+    ],
+    "sameAs": [
+      "https://github.com/Sujan-lM",
+      "https://www.facebook.com/sujan.limel"
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,7 +66,7 @@
       </div>
     </a>
 
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">☰</button>
 
     <ul id="navMenu">
       <li><a href="#mainPage" data-key="navHome">Home</a></li>
@@ -31,11 +77,11 @@
 
     <div class="nav-actions">
       <button onclick="toggleLanguage()" id="langBtn">नेपाली</button>
-      <button onclick="toggleMode()" class="mode-btn">🌓</button>
+      <button onclick="toggleMode()" class="mode-btn" aria-label="Toggle dark mode">🌓</button>
     </div>
   </nav>
 
-  <div id="mainPage">
+  <main id="mainPage">
     <header>
       <div class="typing-container">
         <h1 data-key="welcome" id="typingTarget">Welcome to My Website</h1>
@@ -45,20 +91,20 @@
 
     <div class="container">
       <div class="grid-layout">
-        <div class="card" id="about">
+        <section class="card" id="about">
           <h2 data-key="aboutTitle">👨 About Me</h2>
           <p data-key="aboutText">
             Hello! My name is Sujan Magar. I live in Kathmandu and study Grade 12 Business.
           </p>
-        </div>
+        </section>
 
-        <div class="card" id="edu">
+        <section class="card" id="edu">
           <h2 data-key="eduTitle">🎓 Education</h2>
           <ul>
             <li data-key="edu1">SEE - Neel Barahi School</li>
             <li data-key="edu2">Grade 12 - Triton International College</li>
           </ul>
-        </div>
+        </section>
       </div>
 
       <div class="card document-card">
@@ -69,7 +115,7 @@
         </div>
       </div>
 
-      <div class="card" id="media">
+      <section class="card" id="media">
         <h2 data-key="mediaTitle">📱 Media Gallery</h2>
 
         <div class="media-grid">
@@ -98,9 +144,9 @@
             </audio>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </div>
+  </main>
 
   <div id="pdfView">
     <div class="pdf-header">
