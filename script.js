@@ -4,56 +4,78 @@ let dateInterval = null;
 
 const translations = {
   en: {
-    name: "Sujan Magar",
+    name: "Sujan Limel",
     navHome: "Home",
     navAbout: "About",
     navEdu: "Education",
     navMedia: "Media",
-    welcome: "Welcome to My Website",
-    subtitle: "Sujan Magar ",
+
+    welcome: "Welcome to My Official Portfolio",
+
+    subtitle: "Student • Learning New Technologies",
+
     aboutTitle: "👨 About Me",
-    aboutText: "Hello! My name is Sujan Magar. I live in Kathmandu and study Grade 12 Business.",
+
+    aboutText:
+      "Hello! I'm Sujan Limel from Kathmandu, Nepal. I am passionate about technology and web development. I am currently learning new technologies every day and building projects to improve my skills. Welcome to my official portfolio website.",
+
     edu1: "SEE - Neel Barahi School",
     edu2: "Grade 12 - Triton International College",
     eduTitle: "🎓 Education",
+
     pdfHeading: "📘 Documents",
     pdfFile: "Nepali Barna PDF",
     pdfBtn: "Open PDF",
+
     mediaTitle: "📱 Media Gallery",
     photoTitle: "📷 Photo",
     videoTitle: "🎥 Video Reel",
     musicTitle: "🎵 Music Player",
+
     backBtnText: "Back",
-    footer: "© 2026 Sujan Magar | All Rights Reserved",
+
+    footer: "© 2026 Sujan Limel | All Rights Reserved",
+
     langBtn: "नेपाली"
   },
 
   ne: {
-    name: "सुजन मगर",
+    name: "सुजन लिमेल",
+
     navHome: "गृहपृष्ठ",
     navAbout: "मेरो बारेमा",
     navEdu: "शिक्षा",
     navMedia: "मिडिया",
-    welcome: "मेरो वेबसाइटमा स्वागत छ",
-    subtitle: "सुजन मगर",
+
+    welcome: "मेरो आधिकारिक वेबसाइटमा स्वागत छ",
+
+    subtitle: "विद्यार्थी • नयाँ प्रविधिहरू सिक्दै",
+
     aboutTitle: "👨 मेरो बारेमा",
-    aboutText: "नमस्ते! म सुजन मगर हुँ। म काठमाडौंमा बस्छु र कक्षा १२ मा व्यवस्थापन पढ्छु।",
+
+    aboutText:
+      "नमस्ते! म सुजन लिमेल हुँ। म काठमाडौं, नेपालबाट हुँ। मलाई प्रविधि र वेब विकासमा रुचि छ। म अहिले नयाँ प्रविधिहरू सिक्दै छु र आफ्ना सीपहरू सुधार्न विभिन्न परियोजनाहरूमा काम गरिरहेको छु।",
+
     edu1: "एसईई - नील बाराही विद्यालय",
     edu2: "कक्षा १२ - ट्राइटन इन्टरनेशनल कलेज",
     eduTitle: "🎓 शिक्षा",
+
     pdfHeading: "📘 कागजातहरू",
     pdfFile: "नेपाली वर्णमाला PDF",
     pdfBtn: "पीडीएफ खोल्नुहोस्",
+
     mediaTitle: "📱 मिडिया ग्यालेरी",
     photoTitle: "📷 फोटो",
-    videoTitle: "🎥 भिडियो रिल",
-    musicTitle: "🎵 गीत प्लेयर",
+    videoTitle: "🎥 भिडियो",
+    musicTitle: "🎵 संगीत",
+
     backBtnText: "पछाडि",
-    footer: "© २०२६ सुजन मगर | सबै अधिकार सुरक्षित",
+
+    footer: "© २०२६ सुजन लिमेल | सबै अधिकार सुरक्षित",
+
     langBtn: "English"
   }
 };
-
 const nepaliMonths = [
   "बैशाख",
   "जेठ",
